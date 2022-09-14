@@ -34,7 +34,7 @@
   <main class="contenedor seccion contenido-centrado">
     <h2 class="fw-300 centrar-texto">Llenar formulario de contacto</h2>
 
-    <form action="">
+    <form class="contacto">
 
         <fieldset>
             <legend>Información Personal</legend>
@@ -70,12 +70,13 @@
 
             <p>¿Como desea ser contactado?</p>
 
-            <label for="telefono">Telefono</label>
-            <input type="radio" id="telefono" name="contacto" value="telefono">
-
-            <label for="Correo">E-mail</label>
-            <input type="radio" id="Correo" name="contacto" value="correo">
-
+            <div class="forma-contacto">
+                <label for="telefono">Telefono</label>
+                <input type="radio" id="telefono" name="contacto" value="telefono">
+            
+                <label for="Correo">E-mail</label>
+                <input type="radio" id="Correo" name="contacto" value="correo">
+            </div>
             <p>Si eligió Telefono, elija la fecha y hora</p>
 
             <label for="Fecha">Fecha:</label>
@@ -85,7 +86,7 @@
             <input type="time" id="hora" min="9:00">
         </fieldset>
         
-        <input class="boton boton-verde" type="submit">
+        <input class="enviar boton boton-verde" type="submit">
 
     </form>
   </main>
